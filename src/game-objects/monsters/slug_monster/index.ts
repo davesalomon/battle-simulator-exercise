@@ -8,7 +8,7 @@ import hitSound from "./hit.mp3";
 class SlugMonster implements Monster {
   static type = "SLUG_MONSTER";
   static image = icon;
-  static maxHp = 10;
+  static maxHp = 100;
   static hitSound = hitSound;
 
   private maxAttack = 2;
