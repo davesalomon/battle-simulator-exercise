@@ -6,6 +6,8 @@
 2) yarn install
 3) yarn start
 
+_Pro Tip: If you want to run a shorter game (where each characters has 10hp instead of 100), replace `yarn start` with `yarn start-short`._
+
 _________________________________________________________________________________________________________
 
 #### Cool Stuff

@@ -8,7 +8,7 @@ import hitSound from "./hit.mp3";
 class SlugMonster implements Monster {
   static type = "SLUG_MONSTER";
   static image = icon;
-  static maxHp = 100;
+  static maxHp = process.env.REACT_APP_SHORT_GAME ? 10 : 100;
   static hitSound = hitSound;
 
   private maxAttack = 2;
