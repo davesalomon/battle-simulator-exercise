@@ -6,6 +6,8 @@
 2) yarn install
 3) yarn start
 
+_Pro Tip: If you want to run a shorter game (where each character has 10 health instead of 100), replace `yarn start` with `yarn start-short`._
+
 _________________________________________________________________________________________________________
 
 #### Cool Stuff
@@ -16,6 +18,7 @@ Visually, I think it looks pretty cool.
 
 All assets (music, images) are free for commercial use and do not require attribution.
 
+Responsive -- works well on Desktop, Tablet, Phone (Landscape + Portrait).
 
 #### Observations
 
