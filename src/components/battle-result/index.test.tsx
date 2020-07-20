@@ -15,7 +15,9 @@ it("SHOULD not have an active class on the root element", () => {
     </Provider>
   );
 
-  expect(container.firstChild.className.includes("isActive")).toBe(false);
+  expect(
+    (container.firstChild as HTMLElement).className.includes("isActive")
+  ).toBe(false);
 });
 
 describe("GIVEN the player is the winner", () => {
@@ -38,10 +40,14 @@ describe("GIVEN the player is the winner", () => {
       </Provider>
     );
 
-    expect(container.firstChild.className.includes("isActive")).toBe(true);
+    const rootElement = container.firstChild;
+    expect(rootElement).toBeInTheDocument();
+    expect((rootElement as HTMLElement).className.includes("isActive")).toBe(
+      true
+    );
   });
 
-  it("SHOULD be 'active' on the root element", () => {
+  it("SHOULD display 'You win!'", () => {
     const { getByText } = renderWithRedux(
       <Provider store={store}>
         <BattleResult />
@@ -72,10 +78,14 @@ describe("GIVEN the monster is the winner", () => {
       </Provider>
     );
 
-    expect(container.firstChild.className.includes("isActive")).toBe(true);
+    const rootElement = container.firstChild;
+    expect(rootElement).toBeInTheDocument();
+    expect((rootElement as HTMLElement).className.includes("isActive")).toBe(
+      true
+    );
   });
 
-  it("SHOULD be 'active' on the root element", () => {
+  it("SHOULD display 'Gave Over'", () => {
     const { getByText } = renderWithRedux(
       <Provider store={store}>
         <BattleResult />

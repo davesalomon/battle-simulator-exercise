@@ -2,13 +2,15 @@
 
 ### To run the project
 
-1) Clone the repo
-2) yarn install
-3) yarn start
+1. Clone the repo
+2. `yarn install`
+3. `yarn start`
+
+3.5) To run tests, `yarn test`.
 
 _Pro Tip: If you want to run a shorter game (where each character has 10 health instead of 100), replace `yarn start` with `yarn start-short`._
 
-_________________________________________________________________________________________________________
+---
 
 #### Cool Stuff
 
@@ -29,7 +31,6 @@ targeting a specific character, but it also meant more complex logic around game
 Redux has changed a lot since I last used it (pre-hooks)! Redux Toolkit takes away
 a lot of the mundane stuff I disliked having to write for Redux.
 
-
 #### Problems that can be fixed with a bit more time
 
 Accessibility is an issue. Whilst the game can be played using the keyboard, it's
@@ -48,4 +49,4 @@ There's no Reset button when the game ends. (easy fix)
 
 Needs loads more tests. I didn't want to delve too far from the standard create-react-app, but haven't yet used
 React Testing Library. That, combined with getting up to speed with how Redux works today became a bit of a time sink,
-so I didn't focus too much on tests.
+so tests need a bit of TLC!
